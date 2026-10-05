@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#eaf0df" />
+    <meta name="description" content="A little corner of the internet, made just for Saanvi." />
+    <title>A Little Something for Saanvi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <svg class="svg-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <symbol id="flower" viewBox="0 0 100 100">
+          <g fill="currentColor">
+            <ellipse cx="50" cy="25" rx="12" ry="23" />
+            <ellipse cx="50" cy="25" rx="12" ry="23" transform="rotate(45 50 50)" />
+            <ellipse cx="50" cy="25" rx="12" ry="23" transform="rotate(90 50 50)" />
+            <ellipse cx="50" cy="25" rx="12" ry="23" transform="rotate(135 50 50)" />
+            <ellipse cx="50" cy="25" rx="12" ry="23" transform="rotate(180 50 50)" />
+            <ellipse cx="50" cy="25" rx="12" ry="23" transform="rotate(225 50 50)" />
+            <ellipse cx="50" cy="25" rx="12" ry="23" transform="rotate(270 50 50)" />
+            <ellipse cx="50" cy="25" rx="12" ry="23" transform="rotate(315 50 50)" />
+          </g>
+          <circle cx="50" cy="50" r="16" fill="#edb94b" />
+        </symbol>
+      </defs>
+    </svg>
+
+    <div class="site-wrap">
+      <header class="site-header">
+        <a class="wordmark" href="./" aria-label="For Saanvi, home">
+          <svg class="brand-flower" aria-hidden="true"><use href="#flower" /></svg>
+          a little something
+        </a>
+        <span class="header-note">made just for you <span aria-hidden="true">♡</span></span>
+      </header>
+
+      <main id="main">
+        <section class="page welcome-page" id="welcome" aria-labelledby="welcome-title">
+          <div class="welcome-copy">
+            <div class="eyebrow"><span class="tiny-star" aria-hidden="true">✦</span> A SMALL SURPRISE, A WHOLE LOT OF HEART</div>
+            <h1 id="welcome-title">Hey, Saanvi.<br />This little corner<br />is <em>just for you.</em></h1>
+            <p class="intro">A few little questions. A little bit of mischief.<br class="desktop-break" /> And something I want you to know.</p>
+            <p class="invitation">Want to know what comes next?</p>
+            <button class="primary-button" id="open-button">Okay, I'm curious <span aria-hidden="true">↗</span></button>
+            <div class="under-button"><span aria-hidden="true">♡</span> take a tiny moment, just for yourself</div>
+          </div>
+
+          <div class="scrapbook" aria-hidden="true">
+            <span class="handwritten top-scribble">a little mail for my<br />favourite person</span>
+            <svg class="curved-arrow" viewBox="0 0 90 80"><path d="M15 5 C76 0 84 48 44 61 M43 45 L43 62 L61 62" /></svg>
+            <div class="letter-scene">
+              <div class="letter-peek">
+                <div class="letter-line">Dear Saanvi,</div>
+                <div class="letter-heart">♡</div>
+                <div class="fake-line"></div><div class="fake-line short"></div>
+              </div>
+              <div class="envelope">
+                <div class="envelope-fold"></div>
+                <div class="heart-seal">♥</div>
+                <div class="envelope-label">for you, with love</div>
+              </div>
+            </div>
+            <svg class="decoration flower-one"><use href="#flower" /></svg>
+            <svg class="decoration flower-two"><use href="#flower" /></svg>
+            <span class="sparkle sparkle-one">✧</span>
+            <span class="sparkle sparkle-two">✦</span>
+            <span class="handwritten bottom-scribble">some things are better<br />said with a little love.</span>
+            <span class="smile-sticker"><span class="smile-eyes">••</span><span class="smile-mouth"></span></span>
+          </div>
+          <div class="welcome-bottom"><span class="little-dot"></span> OPEN WITH A SMILE <span class="bottom-rule"></span> NO OCCASION. JUST YOU.</div>
+        </section>
+
+        <section class="page question-page" id="questions" aria-labelledby="question-title" hidden>
+          <div class="question-topline"><span class="eyebrow">A FEW LITTLE PROMISES</span><span id="step-label">01 / 04</span></div>
+          <div class="question-content">
+            <div class="question-illustration" aria-hidden="true"><svg><use href="#flower" /></svg><span id="question-symbol">♡</span></div>
+            <p class="question-kicker" id="question-kicker"></p>
+            <h1 id="question-title" tabindex="-1"></h1>
+            <p class="question-description" id="question-description"></p>
+            <div class="answer-arena" id="answer-arena">
+              <button class="primary-button yes-button" id="yes-button">Yes, I will <span aria-hidden="true">♡</span></button>
+              <button class="no-button" id="no-button">No</button>
+            </div>
+            <p class="playful-note" id="playful-note" aria-live="polite">Psst... one of these buttons is a little shy.</p>
+          </div>
+          <div class="question-footer"><button class="back-button" id="back-button"><span aria-hidden="true">←</span> Go back</button><div class="progress-dots" id="progress-dots" aria-label="Question progress"></div><span class="question-footer-note">little promises, big feelings</span></div>
+        </section>
+
+        <section class="page goodbye-page" id="goodbye" aria-labelledby="goodbye-title" hidden>
+          <div class="letter-heading"><span class="eyebrow">ONE LAST THING, FROM MY HEART</span><svg aria-hidden="true"><use href="#flower" /></svg></div>
+          <h1 id="goodbye-title" tabindex="-1">Go be happy,<br /><em>my favourite person.</em></h1>
+          <div class="farewell-letter">
+            <p class="salutation">Dear Saanvi,</p>
+            <p>I want you to forget me forever and never remember me back. But I will never forget the moments we spent together.</p>
+            <p>I want you to find a good guy and be happy with him forever. And don't worry about me. I will be strong, and I will be better.</p>
+            <p>No matter how hard I try to make it for myself, it will always be for you.</p>
+            <p class="letter-ending">God bless you, Saanvi.<br />And I love you <em>a lot.</em> <span aria-hidden="true">♡</span></p>
+          </div>
+          <div class="postscript"><span aria-hidden="true">✧</span><p>do give me an eye-roll as a reply to this.<br /><span class="handwritten">bieeee ♡</span></p></div>
+          <button class="back-button restart-button" id="restart-button">Read it from the beginning <span aria-hidden="true">↺</span></button>
+        </section>
+      </main>
+
+      <footer class="site-footer"><span>A tiny website. A very big feeling.</span><span>with love, always <span class="footer-heart" aria-hidden="true">♡</span></span></footer>
+    </div>
+    <div class="confetti-container" id="confetti" aria-hidden="true"></div>
+    <noscript><p class="noscript">Please enable JavaScript to open your little surprise.</p></noscript>
+  </body>
+</html>
